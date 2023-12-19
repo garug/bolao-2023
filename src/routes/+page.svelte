@@ -83,6 +83,8 @@
   }
 
   .wrapper {
+		padding: 16px;
+		box-sizing: border-box;
     min-height: 100svh;
     min-width: 100svw;
     display: flex;
@@ -93,7 +95,7 @@
   }
 
   .progress {
-    width: 80%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     display: flex;
@@ -101,10 +103,16 @@
     overflow: hidden;
   }
 
+	@media (min-width: 1024px) {
+		.progress {
+			width: 80%;
+		}
+	}
+
   .bar {
     display: block;
     position: relative;
-    height: 50px;
+    height: 27px;
   }
 
   .bar.lines {
@@ -123,13 +131,20 @@
   }
 
   .bar.pending {
-    background-color: orange;
+    background-color: rgb(219, 226, 153);
   }
 
   .info {
     padding: 16px;
-		width: 40%
+		width: 100%;
+		box-sizing: border-box
   }
+
+	@media (min-width: 1024px) {
+		.info {
+			width: 40%
+		}
+	}
 
   .alert {
     text-align: center;
@@ -139,7 +154,14 @@
     display: flex;
     gap: 16px;
 		justify-content: space-between;
+		flex-direction: column;
   }
+
+	@media (min-width: 768px) {
+		.infos {
+			flex-direction: row;
+		}
+	}
 
   .info h1 {
     width: 100%;
