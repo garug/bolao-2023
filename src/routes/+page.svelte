@@ -13,6 +13,7 @@
     <div class="bar approved" style:width={data.approved + "%"} />
     <div class="bar pending" style:width={data.pending + "%"} />
   </div>
+	<p>✨✨✨ {data.refused} pessoas escolheram não participar. Acredito que esse número aumente nossas chances ✨✨✨</p>
   <section class="info">
     <h1>Informações:</h1>
     <article class="main">
