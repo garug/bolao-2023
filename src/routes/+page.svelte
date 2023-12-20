@@ -45,7 +45,7 @@
         <p><b>Número de cotas:</b> 100</p>
         <p><b>Valor da cota:</b> R$ 10,50</p>
         <p><b>Estimativa do prêmio por cota:</b> R$ 5.700.000,00</p>
-        <p><b>Cotas disponíveis:</b> {100 - data.pending - data.approved}</p>
+        <p><b>Cotas disponíveis:</b> {100 - (data.pending || 0) - data.approved}</p>
         <hr />
         <p class="alert">
           🚨 Agendamentos são válidos até dia 29, <br />
